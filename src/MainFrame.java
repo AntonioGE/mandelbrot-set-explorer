@@ -1,3 +1,6 @@
+
+import java.awt.Toolkit;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,6 +19,8 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         initComponents();
         setLocationRelativeTo(null);
+        
+        
     }
 
     /**
@@ -30,7 +35,7 @@ public class MainFrame extends javax.swing.JFrame {
         mandelbrotDisplay1 = new MandelbrotDisplay();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Mandelbrot Set Display");
+        setTitle("Mandelbrot Set Explorer");
 
         mandelbrotDisplay1.setMaximumSize(new java.awt.Dimension(500, 500));
         mandelbrotDisplay1.setMinimumSize(new java.awt.Dimension(500, 500));
